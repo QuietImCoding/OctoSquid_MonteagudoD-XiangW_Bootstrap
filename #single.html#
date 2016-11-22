@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Bootstrap Intro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <style>
+      /* COOLORS WITH SALMON
+      #f7a9a8 - pink sherbet
+      #fa8072 - salmon
+      #613f75 - cyber grape
+      #e5c3d1 - dust storm
+      #988b8e - mountbatten pink
+      .container {
+      background: aliceblue;
+      border: 1px solid black;
+      }*/
+    </style>
+  </head>
+  <body>
+    <!-- Container -->div.container-fluid>
+    <!-- Nav --> 
+    <!-- Table -->div.container>table.table>thead>tr>th{$}*6^^tbody>tr*6>td{$}*6
+    
+    <!-- Combined -->div.container-fluid>div.container>table.table.table-bordered>thead>tr>th{$}*6^^tbody>tr*6>td{$}*6
+
+  </body>
+</html>
