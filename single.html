@@ -1,84 +1,106 @@
 <html>
   <head>
     <title>Bootstrap Intro</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap-min.js"></script>
     <style>
-      /* COOLORS WITH SALMON
-      #f7a9a8 - pink sherbet
-      #fa8072 - salmon
-      #613f75 - cyber grape
-      #e5c3d1 - dust storm
-      #988b8e - mountbatten pink
-      .container {
-      background: aliceblue;
-      border: 1px solid black;
-      }*/
+      body { padding-top: 70px; }
+      }
     </style>
   </head>
   <body>
+    <!-- The Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <a class="navbar-brand" href="#">Bootstrap</a>
+	</div>
+	<ul class="nav navbar-nav navbar-right">
+	  <li class="active"><a href="#">Page 1</a></li>
+	  <li><a href="#">Page 2</a></li>
+	  <li><a href="#">Page 3</a></li>
+	</ul>
+      </div>
+    </nav>
+
+    <!-- The Container -->
+    <div class="container">
+      <h1>Container</h1>
+      <h2>This section is wrapped in a normal container</h2>
+      <h3>Notice how the text is centered and doesn't quite reach the edges of the page</h3>
+      <p>You hit me with a cricket bat. I am the last of my species, and I know how that weighs on the heart so don't lie to me! You hate me; you want to kill me! Well, go on! Kill me! KILL ME! I'm nobody's taxi service; I'm not gonna be there to catch you every time you feel like jumping out of a spaceship.</p>
+    </div>
+
+    <!-- The Quality Fluid Container -->
     <div class="container-fluid">
-      <table class="table">
+      <h1>Container-Fluid</h1>
+      <h2>This section is wrapped in a fluid container</h2>
+      <h3>Notice with this one the text goes all the way out to the edges of the page</h3>
+      <p>Did I mention we have comfy chairs? All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? Did I mention we have comfy chairs? Sorry, checking all the water in this area; there's an escaped fish.</p>
+    </div>
+
+    <!-- Those Pesky Tables -->
+    <div class="container">
+      <h1 class="pb-3">What is this? A Bootstrap table?? That's absurd!!</h1>
+      <table class="table table-bordered">
         <thead>
-          <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-          </tr>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <th scope="row">Row Name</th>
+            <td>things</td>
+            <td>things</td>
+            <td>things</td>
           </tr>
           <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <th scope="row">Row Name</th>
+            <td>things</td>
+            <td>things</td>
+            <td>things</td>
           </tr>
           <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <th scope="row">Row Name</th>
+            <td>things</td>
+            <td>things</td>
+            <td>things</td>
           </tr>
         </tbody>
       </table>
     </div>
+
+    <!-- Pick a Card -->
+    <div class="container">
+      <h1>Pick a Card</h1>
+
+      <!-- IS IT BAD THAT I WROTE THIS WHOLE THING AS A SINGLE EMMET STATEMENT div.row>div.col-sm-4>div.card.card-block>div.input-group>form>input.form-control[placeholder="USERNAME" type="text"]+input.form-control[type="password" placeholder="PASSWORD"]+input.btn[type="submit" value="Log In"]^^^^div.col-sm-4>div.card.card-block>h1.card-title{HELLO}^^div.col-sm-4>div.card>img.card-img.img-responsive[alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png"] -->
+      <div class="row">
+	<div class="col-sm-4">
+          <div class="card card-block card-outline-secondary">
+              <form action="">
+                <input class="form-control pa-2" name="" type="text" value="" placeholder="USERNAME"/>
+                <input class="form-control pa-2" name="" type="password" value="" placeholder="PASSWORD"/>
+                <input class="btn" name="" type="submit" value="Log In"/>
+              </form>
+
+          </div>
+	</div>
+	<div class="col-sm-4">
+          <div class="card card-block">
+            <h1 class="card-title">HELLO</h1>
+          </div>
+	</div>
+	<div class="col-sm-4">
+          <div class="card">
+            <img class="card-img img-responsive" alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png"/>
+          </div>
+	</div>
+      </div>
+    </div>
+    
   </body>
 </html>
