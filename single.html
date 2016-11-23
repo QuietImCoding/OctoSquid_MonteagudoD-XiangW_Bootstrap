@@ -10,6 +10,30 @@
       .table:not(.table-inverse){background: #C2E7D9; }
       /*.table-inverse {background: #051014;}*/
       .quite-round {border-radius: 10%}
+      .mystery {
+      background: linear-gradient(270deg, #ff0000, #ff5c00, #fffa00, #50ff00, #0011ff, #6000ff, #0600ff, #00ff2b, #f9ff00, #ff8900, #ff0000);
+      background-size: 2200% 2200%;
+
+      -webkit-animation: AnimationName 6s ease infinite;
+      -moz-animation: AnimationName 6s ease infinite;
+      animation: AnimationName 6s ease infinite;
+      }
+
+      @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+      }
+      @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+      }
+      @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+      }
     </style>
 
   </head>
@@ -150,7 +174,14 @@
       </div>
     </div>
     
-
+    <!-- Mystery Button. What will it do?? I don't know -->
+    <div class="container py-3">
+      <div class="row">
+	<div class="col-sm-2 offset-sm-5">
+	  <button class="btn mystery mx-auto">?????</button>
+	</div>
+      </div>
+    </div>
 
 
     <script>
