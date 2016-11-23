@@ -1,55 +1,57 @@
 <html>
 
-<head>
+  <head>
     <title>Bootstrap Intro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <style>
+      body { padding-top: 5rem; }
+    </style>
 
+  </head>
 
-</head>
-
-<body>
+  <body>
 
     <!-- The Navbar -->
-    <nav class="navbar navbar-fixed-top navbar-light bg-faded">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bootstrap</a>
-            <ul class="nav navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page 3</a>
-                </li>
-            </ul>
-            <form class="form-inline float-lg-right">
-                <input class="form-control" type="text" placeholder="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+    <nav class="navbar navbar-fixed-top navbar-light bg-faded pb-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap</a>
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page 3</a>
+          </li>
+        </ul>
+        <form class="form-inline float-lg-right">
+          <input class="form-control" type="text" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </nav>
 
     <!-- The Container -->
     <div class="container">
-        <h1>Container</h1>
-        <h2>This section is wrapped in a normal container</h2>
-        <h3>Notice how the text is centered and doesn't quite reach the edges of the page</h3>
-        <p>You hit me with a cricket bat. I am the last of my species, and I know how that weighs on the heart so don't lie to me! You hate me; you want to kill me! Well, go on! Kill me! KILL ME! I'm nobody's taxi service; I'm not gonna be there to catch you every time you feel like jumping out of a spaceship.</p>
+      <h1>Container</h1>
+      <h2>This section is wrapped in a normal container</h2>
+      <h3>Notice how the text is centered and doesn't quite reach the edges of the page</h3>
+      <p>You hit me with a cricket bat. I am the last of my species, and I know how that weighs on the heart so don't lie to me! You hate me; you want to kill me! Well, go on! Kill me! KILL ME! I'm nobody's taxi service; I'm not gonna be there to catch you every time you feel like jumping out of a spaceship.</p>
     </div>
 
     <br><br>
     
     <!-- The Quality Fluid Container -->
     <div class="container-fluid">
-        <h1>Container-Fluid</h1>
-        <h2>This section is wrapped in a fluid container</h2>
-        <h3>Notice with this one the text goes all the way out to the edges of the page</h3>
-        <p>Did I mention we have comfy chairs? All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? Did I mention we have comfy chairs? Sorry, checking all the water in this area; there's an escaped fish.</p>
+      <h1>Container-Fluid</h1>
+      <h2>This section is wrapped in a fluid container</h2>
+      <h3>Notice with this one the text goes all the way out to the edges of the page</h3>
+      <p>Did I mention we have comfy chairs? All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? Did I mention we have comfy chairs? Sorry, checking all the water in this area; there's an escaped fish.</p>
     </div>
 
     <br><br>
@@ -57,105 +59,125 @@
     <!-- ThosePesky Tables -->    
     <div class="container">
 
-        <h1 class="pb-3">What is this? A Bootstrap table?? That's absurd!!</h1>
-        
-        <button type="button" class="btn btn-outline-primary" id="button_toggle-borders">Toggle Borders</button>
-        <button type="button" class="btn btn-outline-success" id="button_toggle-stripes">Toggle Stripes</button>
-        <button type="button" class="btn btn-outline-info" id="button_toggle-inverse">Toggle Inverse</button>
-        <button type="button" class="btn btn-outline-warning" id="button_toggle-hover">Toggle Hover</button>
-        <button type="button" class="btn btn-outline-danger" id="button_toggle-small">Toggle Small</button>
-        
-        
-        <table id="table_main" class="table">
-            <thead>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Row Name</th>
-                    <td>things</td>
-                    <td>things</td>
-                    <td>things</td>
-                </tr>
-                <tr>
-                    <th scope="row">Row Name</th>
-                    <td>things</td>
-                    <td>things</td>
-                    <td>things</td>
-                </tr>
-                <tr>
-                    <th scope="row">Row Name</th>
-                    <td>things</td>
-                    <td>things</td>
-                    <td>things</td>
-                </tr>
-            </tbody>
-        </table>
+      <h1 class="pb-1">What is this? A Bootstrap table?? That's absurd!!</h1>
+      <div class="pb-2">
+	<button type="button" class="btn btn-outline-primary" id="button_toggle-borders">Toggle Borders</button>
+	<button type="button" class="btn btn-outline-success" id="button_toggle-stripes">Toggle Stripes</button>
+	<button type="button" class="btn btn-outline-info" id="button_toggle-inverse">Toggle Inverse</button>
+	<button type="button" class="btn btn-outline-warning" id="button_toggle-hover">Toggle Hover</button>
+	<button type="button" class="btn btn-outline-danger" id="button_toggle-small">Toggle Small</button>
+      </div>
+      
+      <table id="table_main" class="table">
+        <thead>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+          <th>Header</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Row Name</th>
+            <td>things</td>
+            <td>things</td>
+            <td>things</td>
+          </tr>
+          <tr>
+            <th scope="row">Row Name</th>
+            <td>things</td>
+            <td>things</td>
+            <td>things</td>
+          </tr>
+          <tr>
+            <th scope="row">Row Name</th>
+            <td>things</td>
+            <td>things</td>
+            <td>things</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <!-- Pick a Card -->
     <div class="container">
-        <h1>Pick a Card</h1>
+      <h1>Pick a Card</h1>
 
-        <!-- IS IT BAD THAT I WROTE THIS WHOLE THING AS A SINGLE EMMET STATEMENT div.row>div.col-sm-4>div.card.card-block>div.input-group>form>input.form-control[placeholder="USERNAME" type="text"]+input.form-control[type="password" placeholder="PASSWORD"]+input.btn[type="submit" value="Log In"]^^^^div.col-sm-4>div.card.card-block>h1.card-title{HELLO}^^div.col-sm-4>div.card>img.card-img.img-responsive[alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png"] -->
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card card-block card-outline-secondary">
-                    <form action="">
-                        <input class="form-control pa-2" name="" type="text" value="" placeholder="USERNAME" />
-                        <input class="form-control pa-2" name="" type="password" value="" placeholder="PASSWORD" />
-                        <input class="btn" name="" type="submit" value="Log In" />
-                    </form>
+      <!-- IS IT BAD THAT I WROTE THIS WHOLE THING AS A SINGLE EMMET STATEMENT div.row>div.col-sm-4>div.card.card-block>div.input-group>form>input.form-control[placeholder="USERNAME" type="text"]+input.form-control[type="password" placeholder="PASSWORD"]+input.btn[type="submit" value="Log In"]^^^^div.col-sm-4>div.card.card-block>h1.card-title{HELLO}^^div.col-sm-4>div.card>img.card-img.img-responsive[alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png"] -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card card-block card-outline-secondary">
+            <form action="">
+              <input class="form-control ma-2" name="" type="text" value="" placeholder="USERNAME" />
+              <input class="form-control ma-2" name="" type="password" value="" placeholder="PASSWORD" />
+              <input class="btn" name="" type="submit" value="Log In" />
+            </form>
 
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card card-block">
-                    <h1 class="card-title">HELLO</h1>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img class="card-img img-responsive" alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png" />
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-sm-4">
+          <div class="card card-block">
+            <h1 class="card-title">HELLO</h1>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img img-fluid" alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png" />
+          </div>
+        </div>
+      </div>
     </div>
+    
+    <!-- Some More Demo Of Grid -->
+    <div class="container">
+      <h1>More Grid Demo</h1>
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="img-fluid rounded" alt="" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"/>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-fluid rounded" alt="" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"/>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-fluid rounded" alt="" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"/>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-fluid rounded" alt="" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"/>
+        </div>
+      </div>
+    </div>
+    
 
 
 
     <script>
-        document.getElementById("button_toggle-borders").onclick = function() {
-            document.getElementById("table_main").classList.toggle('table-bordered');
-            document.getElementById("button_toggle-borders").classList.toggle('active');
-        }
+      document.getElementById("button_toggle-borders").onclick = function() {
+      document.getElementById("table_main").classList.toggle('table-bordered');
+      document.getElementById("button_toggle-borders").classList.toggle('active');
+      }
 
-        document.getElementById("button_toggle-stripes").onclick = function() {
-            document.getElementById("table_main").classList.toggle('table-striped');
-            document.getElementById("button_toggle-stripes").classList.toggle('active');
-        }
+      document.getElementById("button_toggle-stripes").onclick = function() {
+      document.getElementById("table_main").classList.toggle('table-striped');
+      document.getElementById("button_toggle-stripes").classList.toggle('active');
+      }
 
-        document.getElementById("button_toggle-inverse").onclick = function() {
-            document.getElementById("table_main").classList.toggle('table-inverse');
-            document.getElementById("button_toggle-inverse").classList.toggle('active');
-        }
+      document.getElementById("button_toggle-inverse").onclick = function() {
+      document.getElementById("table_main").classList.toggle('table-inverse');
+      document.getElementById("button_toggle-inverse").classList.toggle('active');
+      }
 
-        document.getElementById("button_toggle-hover").onclick = function() {
-            document.getElementById("table_main").classList.toggle('table-hover');
-            document.getElementById("button_toggle-hover").classList.toggle('active');
-        }
+      document.getElementById("button_toggle-hover").onclick = function() {
+      document.getElementById("table_main").classList.toggle('table-hover');
+      document.getElementById("button_toggle-hover").classList.toggle('active');
+      }
 
-        document.getElementById("button_toggle-small").onclick = function() {
-            document.getElementById("table_main").classList.toggle('table-sm');
-            document.getElementById("button_toggle-small").classList.toggle('active');
-        }
+      document.getElementById("button_toggle-small").onclick = function() {
+      document.getElementById("table_main").classList.toggle('table-sm');
+      document.getElementById("button_toggle-small").classList.toggle('active');
+      }
     </script>
 
 
 
-</body>
+  </body>
 
 </html>
