@@ -4,7 +4,12 @@
     <title>Bootstrap Intro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <style>
-      body { padding-top: 5rem; }
+      body { padding-top: 5rem; background: #A6CFD5; }
+      .navbar { background-color: #051014; }
+      .card { background: #C2E7D9; }
+      .table:not(.table-inverse){background: #C2E7D9; }
+      /*.table-inverse {background: #051014;}*/
+      .quite-round {border-radius: 10%}
     </style>
 
   </head>
@@ -12,7 +17,7 @@
   <body>
 
     <!-- The Navbar -->
-    <nav class="navbar navbar-fixed-top navbar-light bg-faded pb-0">
+    <nav class="navbar navbar-fixed-top navbar-dark bg-faded pb-0">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Bootstrap</a>
         <ul class="nav navbar-nav">
@@ -31,7 +36,7 @@
         </ul>
         <form class="form-inline float-lg-right">
           <input class="form-control" type="text" placeholder="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-success" type="submit">Search</button>
         </form>
       </div>
     </nav>
@@ -61,11 +66,11 @@
 
       <h1 class="pb-1">What is this? A Bootstrap table?? That's absurd!!</h1>
       <div class="pb-2">
-	<button type="button" class="btn btn-outline-primary" id="button_toggle-borders">Toggle Borders</button>
-	<button type="button" class="btn btn-outline-success" id="button_toggle-stripes">Toggle Stripes</button>
-	<button type="button" class="btn btn-outline-info" id="button_toggle-inverse">Toggle Inverse</button>
-	<button type="button" class="btn btn-outline-warning" id="button_toggle-hover">Toggle Hover</button>
-	<button type="button" class="btn btn-outline-danger" id="button_toggle-small">Toggle Small</button>
+	<button type="button" class="mr-1 btn btn-primary" id="button_toggle-borders">Toggle Borders</button>
+	<button type="button" class="mx-1 btn btn-success" id="button_toggle-stripes">Toggle Stripes</button>
+	<button type="button" class="mx-1 btn btn-info" id="button_toggle-inverse">Toggle Inverse</button>
+	<button type="button" class="mx-1 btn btn-warning" id="button_toggle-hover">Toggle Hover</button>
+	<button type="button" class="ml-1 btn btn-danger" id="button_toggle-small">Toggle Small</button>
       </div>
       
       <table id="table_main" class="table">
@@ -105,13 +110,12 @@
       <!-- IS IT BAD THAT I WROTE THIS WHOLE THING AS A SINGLE EMMET STATEMENT div.row>div.col-sm-4>div.card.card-block>div.input-group>form>input.form-control[placeholder="USERNAME" type="text"]+input.form-control[type="password" placeholder="PASSWORD"]+input.btn[type="submit" value="Log In"]^^^^div.col-sm-4>div.card.card-block>h1.card-title{HELLO}^^div.col-sm-4>div.card>img.card-img.img-responsive[alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png"] -->
       <div class="row">
         <div class="col-sm-4">
-          <div class="card card-block card-outline-secondary">
+          <div class="card card-block">
             <form action="">
-              <input class="form-control ma-2" name="" type="text" value="" placeholder="USERNAME" />
-              <input class="form-control ma-2" name="" type="password" value="" placeholder="PASSWORD" />
-              <input class="btn" name="" type="submit" value="Log In" />
+              <input class="form-control" name="" type="text" value="" placeholder="USERNAME" />
+              <input class="form-control mt-1" name="" type="password" value="" placeholder="PASSWORD" />
+              <input class="btn my-1 btn-primary center-block" name="" type="submit" value="Log In" />
             </form>
-
           </div>
         </div>
         <div class="col-sm-4">
@@ -120,7 +124,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card quite-round">
             <img class="card-img img-fluid" alt="Card Image" src="http://cliparts.co/cliparts/8TG/beG/8TGbeGAAc.png" />
           </div>
         </div>
@@ -128,7 +132,7 @@
     </div>
     
     <!-- Some More Demo Of Grid -->
-    <div class="container">
+    <div class="container py-2">
       <h1>More Grid Demo</h1>
       <div class="row">
         <div class="col-sm-3">
