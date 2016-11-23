@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <link href="css/foundation.min.css" rel="stylesheet" type="text/css"/>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="small-4 column">
+        <h1>FOUNDATION</h1>
+        <h3>You don't know how to do any of those. Look, last night was a mistake. Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you! Enough about your promiscuous mother, Hermes! We have bigger problems.</h3>
+      </div>
+    </div>
+  </body>
+</html>

@@ -230,7 +230,7 @@
           <img class="img-fluid rounded" alt="" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" />
         </div>
       </div>
-     
+      
       <div class="pt-3">
         <button type="button" class="mr-1 btn btn-secondary" id="button_inc-col1">Increase Col 1 Span</button>
         <button type="button" class="mx-1 btn btn-secondary" id="button_dec-col1">Decrease Col 1 Span </button>
@@ -288,18 +288,18 @@
 	document.getElementById("button_inc-col1").onclick = function() {
 	console.log(parseInt(document.getElementById("gridcol1").className.substr(-1)) + 1);
 	document.getElementById("gridcol1").className = document.getElementById("gridcol1").className.slice(0,-1) + (parseInt(document.getElementById("gridcol1").className.substr(-1)) + 1);
-}
+	}
 	document.getElementById("button_dec-col1").onclick = function() {
 	console.log(parseInt(document.getElementById("gridcol1").className.substr(-1)) - 1);
 	document.getElementById("gridcol1").className = document.getElementById("gridcol1").className.slice(0,-1) + (parseInt(document.getElementById("gridcol1").className.substr(-1)) - 1);
 
 
-}
-/*
+	}
+	/*
 	document.getElementById("gridcol1");
 	document.getElementById("gridcol2");
 	document.getElementById("gridcol3");
-*/
+	*/
 
         function flip(i) {
         //if (i > 0) {
@@ -334,7 +334,7 @@
 							setTimeout(function() {
 							window.scrollTo(0, 330);
 							var link = document.createElement("link");
-							link.href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+							link.href = "http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
 							link.type = "text/css";
 							link.rel = "stylesheet";
 
